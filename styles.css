@@ -1,0 +1,40 @@
+body{
+    background-color: #1f1f1f;
+    color: rgb(199, 199, 199);
+    text-align: center;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: absolute;
+    align-items: center;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(199, 199, 199);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1rem
+}
+
+.navbar a:hover {
+  background-color: rgb(199, 199, 199);
+  color: black;
+}
+
+.navbar a.active {
+  background-color: black;
+  color: rgb(199, 199, 199);
+}
+.github{
+    height: 20px;
+}
