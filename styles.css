@@ -35,13 +35,19 @@ body{
   background-color: black;
   color: rgb(199, 199, 199);
 }
-.github{
+.footer{
     content: url("img/github.png");
     height: 20px;
+
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  margin-left: auto; 
+  margin-right: 0;
 }
 
-.github_a a:hover{
-  background-color: rgb(199, 199, 199);
-  content: url("img/github_white.png");
-  height: 20px;
+.footer a {
+  float: right;
+  display: block;
 }
