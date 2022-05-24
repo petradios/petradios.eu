@@ -19,7 +19,7 @@ body{
 .navbar a {
   float: left;
   display: block;
-  color: rgb(199, 199, 199);
+  color: #c7c7c7;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -36,5 +36,12 @@ body{
   color: rgb(199, 199, 199);
 }
 .github{
+    content: url("img/github.png");
     height: 20px;
+}
+
+.github_a a:hover{
+  background-color: rgb(199, 199, 199);
+  content: url("img/github_white.png");
+  height: 20px;
 }
