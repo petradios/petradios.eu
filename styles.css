@@ -8,12 +8,19 @@ body{
     padding: 0;
 }
 
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar{
-    position: absolute;
-    align-items: center;
-    overflow: hidden;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
 }
 
 .navbar a {
@@ -34,20 +41,4 @@ body{
 .navbar a.active {
   background-color: black;
   color: rgb(199, 199, 199);
-}
-.footer{
-    content: url("img/github.png");
-    height: 20px;
-
-}
-.footer{
-  position: absolute;
-  bottom: 0;
-  margin-left: auto; 
-  margin-right: 0;
-}
-
-.footer a {
-  float: right;
-  display: block;
 }
