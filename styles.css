@@ -11,16 +11,18 @@ body{
 .flex-container{
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .navbar{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   overflow: hidden;
   width: 100%;
+  background-color: #1f1f1f;
+  margin-top: auto;
 }
 
 .navbar a {
@@ -41,4 +43,10 @@ body{
 .navbar a.active {
   background-color: black;
   color: rgb(199, 199, 199);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
