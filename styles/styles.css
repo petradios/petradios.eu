@@ -78,7 +78,10 @@
   background-color: black;
   color: rgb(199, 199, 199);
 }
-
+.about img{
+  margin-top: 5rem;
+  height: 200px;
+}
 .contact_form{
   padding: 2rem;
 }
@@ -98,9 +101,15 @@ input[type=submit],input[type=text],input[type=email], textarea{
   color: #c7c7c7;
   font-family: inherit;
 }
+input[type=submit]:focus,input[type=text]:focus,input[type=email]:focus, textarea:focus-within{
+  background-color: black;
+}
 input[type=submit] { 
   width: 100%;
   padding: 12px 20px;
   cursor: pointer;
   font-family: inherit;
+}
+input[type=submit]:hover{
+  background-color: black;
 }
