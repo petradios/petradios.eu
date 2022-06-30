@@ -1,3 +1,4 @@
+/* css for mobile */
 @media only screen and (max-width: 768px) {
   body{
     background-color: #1f1f1f;
@@ -30,6 +31,8 @@
 
 }
 
+
+/* css for PCs */
 @media only screen and (min-width: 768px){
 
   body{
@@ -61,6 +64,16 @@
   }
 }
 
+
+/* main container */
+.content {
+  margin-bottom: 5rem;
+  padding: 2rem;
+  border: 3px #c7c7c7 solid;
+}
+
+
+/* navbar css*/
 .navbar{
   position: fixed;
   bottom: 0;
@@ -68,22 +81,39 @@
   width: 100%;
   background-color: #1f1f1f;
 }
-
 .navbar a:hover {
   background-color: rgb(199, 199, 199);
   color: black;
 }
-
 .navbar a.active {
   background-color: black;
   color: rgb(199, 199, 199);
 }
+
+
+/* page-specific css */
+  
+  /* home css */
+
+
+  /* about css*/
 .about img{
   margin-top: 5rem;
   height: 200px;
 }
+
+  /* project css */
+.projects{
+}
+
+  /* contact css */
 .contact_form{
-  padding: 2rem;
+
+}
+.social{
+}
+.social img{
+  height: 3rem;
 }
 input[type=text],input[type=email], textarea {
   width: 100%;
