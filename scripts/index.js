@@ -1,17 +1,15 @@
-const darkButton = document.getElementById('dark');
-const lightButton = document.getElementById('light');
-const solarButton = document.getElementById('solar');
-const body = document.body;
+function themeSwitcher() {
+    const body = document.body;
+    const bttn = document.getElementById("theme-toggle");
 
-const theme = localStorage.getItem('theme');
-
-darkButton.onclick = () => {
-    body.classList.replace('light-theme', 'dark-theme');
-    localStorage.setItem('theme', 'dark-theme');
-  };
-  
-  lightButton.onclick = () => {
-    body.classList.replace('dark-theme', 'light-theme');
-  
-    localStorage.setItem('theme', 'light-theme');
-  };
+    if(body.className == "dark-theme"){
+        body.classList.replace('dark-theme', 'light-theme');
+        bttn.innerHTML = "dark theme";
+        return;
+    }
+    if(body.className == "light-theme"){
+        body.classList.replace('light-theme', 'dark-theme');
+        bttn.innerHTML = "light theme";
+        return;
+    }
+}
