@@ -1,15 +1,17 @@
-/*const { response } = require('express');
-const express = require('express');
-const { readFile } = require('fs').promises;
-const { request } = require('http');
+const darkButton = document.getElementById('dark');
+const lightButton = document.getElementById('light');
+const solarButton = document.getElementById('solar');
+const body = document.body;
 
-const app = express();
+const theme = localStorage.getItem('theme');
 
-app.get('/', async (request, response) =>{
-
-    response.send( await readFile('../index.html', 'utf-8') )
-
-    })
-
-
-app.listen(process.env.PORT || 3000, () => console.log('Website available on http://localhost:3000'))*/
+darkButton.onclick = () => {
+    body.classList.replace('light-theme', 'dark-theme');
+    localStorage.setItem('theme', 'dark-theme');
+  };
+  
+  lightButton.onclick = () => {
+    body.classList.replace('dark-theme', 'light-theme');
+  
+    localStorage.setItem('theme', 'light-theme');
+  };

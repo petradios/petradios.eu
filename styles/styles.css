@@ -1,8 +1,20 @@
+:root{
+  --gray: #1f1f1f;
+  --off-white: #c7c7c7;
+}
+.dark-theme{
+  --bg: var(--gray);
+  --content: var(--off-white);
+}
+.light-theme{
+  --bg: var(--off-white);
+  --content: var(--gray);
+}
 /* css for mobile */
 @media only screen and (max-width: 768px) {
   body{
-    background-color: #1f1f1f;
-    color: #c7c7c7;
+    background-color: var(--gray);
+    color: var(--off-white);
     text-align: center;
     font-family: 'Azeret Mono', monospace;
     font-size: 0.8rem;
@@ -22,7 +34,7 @@
   .navbar a {
     float: left;
     display: block;
-    color: #c7c7c7;
+    color: var(--off-white);
     text-align: center;
     padding: 0.8rem 1rem;
     text-decoration: none;
@@ -36,8 +48,8 @@
 @media only screen and (min-width: 768px){
 
   body{
-    background-color: #1f1f1f;
-    color: #c7c7c7;
+    background-color: var(--gray);
+    color: var(--off-white);
     text-align: center;
     font-family: 'Azeret Mono', monospace;
     font-size: 1.5rem;
@@ -56,7 +68,7 @@
   .navbar a {
     float: left;
     display: block;
-    color: #c7c7c7;
+    color: var(--off-white);
     text-align: center;
     padding: 1rem 1rem;
     text-decoration: none;
@@ -69,7 +81,7 @@
 .content {
   margin-bottom: 5rem;
   padding: 2rem;
-  border: 3px #c7c7c7 solid;
+  border: 3px var(--off-white) solid;
 }
 
 
@@ -79,7 +91,7 @@
   bottom: 0;
   overflow: hidden;
   width: 100%;
-  background-color: #1f1f1f;
+  background-color: var(--gray);
 }
 .navbar a:hover {
   background-color: rgb(199, 199, 199);
@@ -89,7 +101,9 @@
   background-color: black;
   color: rgb(199, 199, 199);
 }
-
+.theme-selector{
+  float: right;
+}
 
 /* page-specific css */
   
@@ -126,9 +140,9 @@ textarea{
 }
 input[type=submit],input[type=text],input[type=email], textarea{
   max-width: 50rem;
-  border: 3px #c7c7c7 solid;
-  background-color: #1f1f1f;
-  color: #c7c7c7;
+  border: 3px var(--off-white) solid;
+  background-color: var(--gray);
+  color: var(--off-white);
   font-family: inherit;
 }
 input[type=submit]:focus,input[type=text]:focus,input[type=email]:focus, textarea:focus-within{
