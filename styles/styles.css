@@ -96,22 +96,21 @@
   /* home css */
 
 
-  /* about css*/
+  /* about css */
 .about img{
   margin-top: 5rem;
   height: 200px;
 }
 
-  /* project css */
+  /* project css
 .projects{
-}
+}*/
 
-  /* contact css */
+  /* contact css 
 .contact_form{
 
-}
 .social{
-}
+}*/
 .social img{
   height: 3rem;
 }
@@ -126,6 +125,7 @@ textarea{
   resize: vertical;
 }
 input[type=submit],input[type=text],input[type=email], textarea{
+  max-width: 50rem;
   border: 3px #c7c7c7 solid;
   background-color: #1f1f1f;
   color: #c7c7c7;

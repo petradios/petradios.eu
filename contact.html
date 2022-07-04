@@ -13,29 +13,33 @@
 </head>
 <body>
     <div class="flex-container">
-        <h1>contact not functional</h1>
-        <div class="content">
-            <p>in case you need to contact me fill out this form or find me on other platforms</p>
-            <div class="contact_form">
-                <form autocomplete="off">
-                    <input type="text" id="name" placeholder="name">
-                    <input type="email" id="email" placeholder="e-mail">
-                    <textarea id="message" placeholder="type your message here"></textarea>
-                    <input type="submit" value="submit">
-                </form>
+        <header>
+            <h1>contact not functional</h1>
+        </header>
+        <main>
+            <div class="content">
+                <p>in case you need to contact me fill out this form or find me on other platforms</p>
+                <div class="contact_form">
+                    <form action="contactform.php" method="post" autocomplete="off">
+                        <input type="text" name="name" placeholder="name">
+                        <input type="email" name="email" placeholder="e-mail">
+                        <textarea name="message" placeholder="type your message here"></textarea>
+                        <input type="submit" name="submit" value="submit">
+                    </form>
+                </div>
+                <div class="social">
+                    <p>Also find me here</p>
+                    <a href="https://linkedin.com"><img src="img/linkedin.png" alt="linkedin"></a>
+                    <a href="https://github.com/petradios"><img src="img/github_white.png" alt="github"></a>
+                </div>
             </div>
-            <div class="social">
-                <p>Also find me here</p>
-                <a href="https://linkedin.com"><img src="img/linkedin.png" alt="linkedin"></a>
-                <a href="https://github.com/petradios"><img src="img/github_white.png" alt="github"></a>
-            </div>
-        </div>
+        </main>
     </div>
-    <div class="navbar">
+    <nav class="navbar">
         <a href="/index.html">home</a>
         <a href="/about.html">about</a>
         <a href="/projects.html">projects</a>
         <a href="/contact.html" class="active">contact</a>
-    </div>
+    </nav>
 </body>
 </html>
