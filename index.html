@@ -22,17 +22,21 @@
                 <p>welcome to my personal website. have a look around.</p>
             </div>
         </main>
+        <nav class="navbar">
+            <div class="navbar-menu">
+                <a href="/index.html" class="active">home</a>
+                <a href="/projects.html">projects</a>
+                <a href="/about.html">about</a>
+                <a href="/contact.html">contact</a>
+            </div>
+            <div class="theme-selector">
+                <a class="theme-toggle" onclick="themeSwitcher()">light theme</a>
+                <label class="switch">
+                    <input id="check"type="checkbox" onclick="themeSwitcher2()">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
     </div>
-    <nav class="navbar">
-        <div class="navbar-menu">
-            <a href="/index.html" class="active">home</a>
-            <a href="/about.html">about</a>
-            <a href="/projects.html">projects</a>
-            <a href="/contact.html">contact</a>
-        </div>
-        <div class="theme-selector">
-            <a id="theme-toggle" onclick="themeSwitcher()">light theme</a>
-        </div>
-    </nav>
 </body>
 </html>

@@ -44,7 +44,6 @@
 
 }
 
-
 /* css for PCs */
 @media only screen and (min-width: 768px){
 
@@ -77,7 +76,6 @@
   }
 }
 
-
 /* main container */
 .content {
   margin-bottom: 5rem;
@@ -85,12 +83,13 @@
   border: 3px var(--content) solid;
 }
 
-
 /* navbar css*/
 .navbar{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   position: fixed;
   bottom: 0;
-  overflow: hidden;
   width: 100%;
   background-color: var(--bg);
 }
@@ -117,15 +116,9 @@
   height: 200px;
 }
 
-  /* project css
-.projects{
-}*/
+  /* project css */
 
-  /* contact css 
-.contact_form{
-
-.social{
-}*/
+  /* contact css */
 .social img{
   height: 3rem;
 }
@@ -157,4 +150,9 @@ input[type=submit] {
 }
 input[type=submit]:hover{
   background-color: black;
+}
+
+.theme-toggle{
+  display: flex;
+  justify-content: flex-end;
 }
