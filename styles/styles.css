@@ -1,11 +1,12 @@
 :root{
   --gray: #1f1f1f;
   --off-white: #c7c7c7;
-  --gray-white: #9c9c9c;
+  --gray-white: #9c9c9c; 
 }
 .dark-theme{
   --bg: var(--gray);
   --content: var(--off-white);
+  --contrast: blac
 }
 .light-theme{
   --bg: var(--off-white);
@@ -155,4 +156,8 @@ input[type=submit]:hover{
 .theme-toggle{
   display: flex;
   justify-content: flex-end;
+}
+
+h1{
+  text-shadow: 0.4rem 0.4rem black;
 }
