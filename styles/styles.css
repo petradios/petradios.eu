@@ -1,16 +1,21 @@
 :root{
   --gray: #1f1f1f;
   --off-white: #c7c7c7;
-  --gray-white: #9c9c9c; 
+  --gray-white: #9c9c9c;
+  --black: #000000;
+  --white: #ffffff;
 }
 .dark-theme{
   --bg: var(--gray);
   --content: var(--off-white);
-  --contrast: blac
+  --contrast: var(--black);
+  --github: "/imgs/github_white.png";
 }
 .light-theme{
   --bg: var(--off-white);
   --content: var(--gray);
+  --contrast: var(--white);
+  --github: "/imgs/github.png"
 }
 /* css for mobile */
 @media only screen and (max-width: 768px) {
@@ -96,10 +101,10 @@
 }
 .navbar a:hover {
   background-color: var(--content);
-  color: black;
+  color: var(--contrast);
 }
 .navbar a.active {
-  background-color: black;
+  background-color: var(--contrast);
   color: var(--content);
 }
 .theme-selector{
@@ -141,7 +146,7 @@ input[type=submit],input[type=text],input[type=email], textarea{
   font-family: inherit;
 }
 input[type=submit]:focus,input[type=text]:focus,input[type=email]:focus, textarea:focus-within{
-  background-color: black;
+  background-color: var(--contrast);
 }
 input[type=submit] { 
   width: 100%;
@@ -150,14 +155,10 @@ input[type=submit] {
   font-family: inherit;
 }
 input[type=submit]:hover{
-  background-color: black;
+  background-color: var(--contrast);
 }
 
 .theme-toggle{
   display: flex;
   justify-content: flex-end;
-}
-
-h1{
-  text-shadow: 0.4rem 0.4rem black;
 }
